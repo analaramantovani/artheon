@@ -11,24 +11,28 @@
     <header class="d-flex">
         <img src="../static/img/logo.png" alt="Logo Artheon">
         <nav class="d-flex">
-            <a href="">Contexto</a>
-            <a href="">Uso da I.A.</a>
-            <a href="">Arte</a>
+            <a href="#contexto">Contexto</a>
+            <a href="#funcionalidades">Uso da I.A.</a>
+            <a href="#arte">Arte</a>
             <a href="">Música</a>
             <a href="">Criatividade</a>
         </nav>
     </header>
     <main>
         <section class="inicio">
-            <h1>I.A. na Arte e Música </h1>
+            <video autoplay muted loop playsinline class="video-bg">
+                <source src="../static/videos/banner.mp4" type="video/mp4">
+            </video>
+
+            <h1>I.A. na Arte e Música</h1>
             <p>Na busca pela perfeição, estamos perdendo a alma da arte?</p>
             <a href="">Saiba mais</a>
         </section>
-        <section class="contexto">
+        <section class="contexto" id="contexto">
             <h3>Contexto</h3>
             <p>Com o avanço acelerado da tecnologia, a Inteligência Artificial passou a ocupar um espaço cada vez maior na criação artística. Hoje, algoritmos já produzem pinturas, composições musicais, roteiros e até sequências cinematográficas — obras que antes pareciam depender exclusivamente da sensibilidade humana.</p>
         </section>
-        <section class="funcionalidades">
+        <section class="funcionalidades d-flex" id="funcionalidades">
             <div>
                 <img src="../static/img/arte.png" alt="Arte">
                 <h4>IA na Arte</h4>
@@ -45,16 +49,48 @@
                 <p>A IA não só auxilia, mas transforma a forma de criar. Essa parceria entre homem e máquina redefine o que entendemos por criatividade — e até onde ela continua sendo humana.</p>
             </div>
         </section>
-        <section class="arte">
+        <section class="arte d-flex" id="arte">
             <h3>Arte com Inteligência Artificial</h3>
             <p>As pinturas geradas por Inteligência Artificial impressionam pelo realismo e pela riqueza de detalhes, muitas vezes indistinguíveis das obras humanas. No entanto, essa semelhança levanta questões sobre autenticidade e autoria: até que ponto a arte criada por algoritmos pode transmitir a mesma intenção e sensibilidade do artista?</p>
-            <div>
+            <div class="pinturas">
                 <img src="" alt="Pintura normal">
             </div>
-            <div>
+            <div class="pinturas">
                 <img src="" alt="Pintura IA">
             </div>
         </section>
+        <!-- <section class="musica">
+            <img src="" alt="">
+        </section> -->
+        <section class="criatividade">
+            <h3>Pronto para Explorar?</h3>
+            <p>Descubra como a IA está transformando a arte e a criatividade. Experimente ferramentas, veja exemplos e inspire-se com a nova era da criatividade.</p>
+            <a href="">Saiba mais</a>
+        </section>
     </main>
+    <footer>
+        <div class="container">
+            <div>
+                <img src="../static/img/logo.png" alt="Logo Artheon">
+            </div>
+            <div>
+                <nav class="d-flex">
+                    <a href="#contexto">Contexto</a>
+                    <a href="#funcionalidades">Uso da I.A.</a>
+                    <a href="#arte">Arte</a>
+                    <a href="">Música</a>
+                    <a href="">Criatividade</a>
+                </nav>
+            </div>
+            <div class="contato d-flex">
+                <div>
+                    <img src="../static/img/redes.png" alt="Redes Sociais">
+                </div>
+                <div>
+                    <p>© 2025 - Todos os direitos reservados</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
