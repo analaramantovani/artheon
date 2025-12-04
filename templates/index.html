@@ -52,45 +52,63 @@
         <section class="arte d-flex" id="arte">
             <h3>Arte com Inteligência Artificial</h3>
             <p>As pinturas geradas por Inteligência Artificial impressionam pelo realismo e pela riqueza de detalhes, muitas vezes indistinguíveis das obras humanas. No entanto, essa semelhança levanta questões sobre autenticidade e autoria: até que ponto a arte criada por algoritmos pode transmitir a mesma intenção e sensibilidade do artista?</p>
-            <div class="pinturas">
-                <img src="" alt="Pintura normal">
-            </div>
-            <div class="pinturas">
-                <img src="" alt="Pintura IA">
-            </div>
         </section>
-        <!-- <section class="musica">
-            <img src="" alt="">
-        </section> -->
+       <section class="musica">
+            <div class="musica-capa">
+                <img src="../static/img/aquarela.png" class="capa" alt="Capa Aquarela">
+                <img src="../static/img/vinil.png" class="vinil" id="btnVinil" alt="Disco Vinil">
+            </div>
+            <div class="musica-texto">
+                <h3>Aquarela</h3>
+                <h2>feita por Inteligência Artificial</h2>
+                <p>“Aquarela” é um clássico de Toquinho que retrata o mundo como um desenho em transformação. Para este projeto, criamos uma versão feita por Inteligência Artificial, inspirada no estilo original, mantendo o clima leve e imaginativo da canção.</p>
+            </div>
+            <audio id="audio" src="../static/audios/Numa folha qualquer (1).mp3"></audio>
+        </section>
+        </section>
         <section class="criatividade">
             <h3>Pronto para Explorar?</h3>
             <p>Descubra como a IA está transformando a arte e a criatividade. Experimente ferramentas, veja exemplos e inspire-se com a nova era da criatividade.</p>
-            <a href="">Saiba mais</a>
+            <a class="botaocriatividade" href="">Saiba mais</a>
         </section>
+        
     </main>
-    <footer>
-        <div class="container">
-            <div>
-                <img src="../static/img/logo.png" alt="Logo Artheon">
-            </div>
-            <div>
-                <nav class="d-flex">
-                    <a href="#contexto">Contexto</a>
-                    <a href="#funcionalidades">Uso da I.A.</a>
-                    <a href="#arte">Arte</a>
-                    <a href="">Música</a>
-                    <a href="">Criatividade</a>
-                </nav>
-            </div>
-            <div class="contato d-flex">
-                <div>
-                    <img src="../static/img/redes.png" alt="Redes Sociais">
-                </div>
-                <div>
-                    <p>© 2025 - Todos os direitos reservados</p>
-                </div>
-            </div>
+    <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <img src="../static/img/logo.png" alt="Logo Artheon">
         </div>
-    </footer>
+        <nav class="footer-menu">
+            <a href="#contexto">Contexto</a>
+            <a href="#funcionalidades">Uso da I.A.</a>
+            <a href="#arte">Arte</a>
+            <a href="#">Música</a>
+            <a href="#">Criatividade</a>
+        </nav>
+        <div class="footer-social">
+            <img src="../static/img/redes.png" alt="Redes Sociais" class="redes">
+            <p>© 2025 - Todos os direitos reservados</p>
+        </div>
+
+    </div>
+</footer>
+    <script>
+        const audio = document.getElementById("audio");
+        const vinil = document.getElementById("btnVinil");
+
+        vinil.addEventListener("click", () => {
+            if (audio.paused) {
+                audio.play();
+                vinil.classList.add("tocando");
+            } else {
+                audio.pause();
+                vinil.classList.remove("tocando");
+            }
+        });
+
+        audio.addEventListener("ended", () => {
+            vinil.classList.remove("tocando");
+        });
+    </script>
 </body>
 </html>

@@ -214,9 +214,10 @@ header nav a:hover {
     margin: 0 auto;
     line-height: 1.6;
     font-weight: 100;
+    
 }
 
-.criatividade a{
+.botaocriatividade {
     color: white;
     font-weight: 700;
     font-family: 'Inter', sans-serif;
@@ -224,4 +225,123 @@ header nav a:hover {
     text-decoration: none;
     padding: 10px 10px;
     border-radius: 15px;
+    display: inline-block; 
+    margin-top: 1em; 
+}
+
+footer {
+    background-color: #0b0b14; 
+    padding: 40px 80px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-logo img {
+    width: 170px;
+}
+
+.footer-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px 50px;
+}
+
+.footer-menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+    transition: 0.3s;
+}
+
+.footer-menu a:hover {
+    color: #b67bff;
+}
+
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.footer-social .redes {
+    width: 180px;
+}
+
+.footer-social p {
+    font-weight: 200;
+    font-size: 0.9em;
+}
+
+.musica {
+    background-color: #0b0b14; 
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 60px 0;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+.musica-capa {
+    position: relative;
+    width: 350px;
+    margin-left: 100px;
+}
+
+.musica-capa .capa {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.musica-capa .vinil {
+    position: absolute;
+    bottom: -60px;
+    left: 20px;
+    width: 290px;
+    z-index: 10;
+}
+
+.musica-texto h3 {
+    font-size: 2.8em;
+    font-weight: 900;
+}
+
+.musica-texto h2 {
+    font-size: 1.4em;
+    font-style: regular;
+    margin-bottom: 20px;
+    color: #cccccc;
+}
+
+.musica-texto p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    max-width: 550px;
+}
+
+
+#audio {
+    display: none;
+}
+
+.vinil {
+    width: 200px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.vinil.tocando {
+    animation: girar 3s linear infinite;
+}
+
+@keyframes girar {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
 }
